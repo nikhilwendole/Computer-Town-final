@@ -1,0 +1,104 @@
+[
+  {
+    "id": 13,
+    "brand": "Dell",
+    "name": "Dell Latitude 7480",
+    "processor": "Intel Core i5 7th Gen",
+    "ram": "8GB DDR4",
+    "storage": "256GB NVMe SSD",
+    "display": "14\" FHD LED",
+    "gpu": "Intel HD Graphics",
+    "price": "₹16,500",
+    "images": [
+      "./images/dell3.jpg",
+      "https://source.unsplash.com/featured/?dell,office",
+      "https://source.unsplash.com/featured/?dell,lightweight"
+    ],
+    "description": "Affordable Dell Latitude 7480 for students and office work.",
+    "battery": "2 Hrs Backup",
+    "ports": "Wi-Fi, WebCam, Bluetooth",
+    "os": "Windows 11 Professional 64-bit",
+    "warranty": "3 Months Hardware Warranty"
+  },
+  {
+    "id": 14,
+    "brand": "Dell",
+    "name": "Dell Latitude E5450",
+    "processor": "Intel Core i7 5th Gen",
+    "ram": "8GB DDR3",
+    "storage": "256GB SATA SSD",
+    "display": "14\" HD Anti-Glare LED",
+    "gpu": "Intel HD Graphics",
+    "price": "₹14,500",
+    "images": [
+      "https://source.unsplash.com/featured/?dell,e5450",
+      "https://source.unsplash.com/featured/?old,dell"
+    ],
+    "description": "Dell Latitude E5450 with i7 5th Gen processor.",
+    "battery": "2+ Hrs Backup",
+    "ports": "Wi-Fi, WebCam, Bluetooth",
+    "os": "Windows 10 Professional 64-bit",
+    "warranty": "3 Months Hardware Warranty"
+  },
+  {
+    "id": 15,
+    "brand": "Dell",
+    "name": "Dell Latitude E5450",
+    "processor": "Intel Core i5 5th Gen",
+    "ram": "8GB DDR3",
+    "storage": "256GB SATA SSD",
+    "display": "14\" HD Anti-Glare LED",
+    "gpu": "Intel UHD Graphics",
+    "price": "₹12,900",
+    "images": [
+      "https://source.unsplash.com/featured/?dell,e5450",
+      "https://source.unsplash.com/featured/?dell,usedlaptop"
+    ],
+    "description": "Entry-level Dell Latitude with 5th Gen i5 and SSD storage.",
+    "battery": "2+ Hrs Backup",
+    "ports": "Wi-Fi, WebCam, Bluetooth",
+    "os": "Windows 10 Professional 64-bit",
+    "warranty": "3 Months Hardware Warranty"
+  },
+  {
+    "id": 16,
+    "brand": "HP",
+    "name": "HP EliteBook 840 G5",
+    "processor": "Intel Core i5 8th Gen",
+    "ram": "8GB DDR4",
+    "storage": "256GB NVMe SSD",
+    "display": "14.1\" FHD",
+    "gpu": "Intel UHD Graphics",
+    "price": "₹20,900",
+    "images": [
+      "./images/dell2.jpg",
+      "https://source.unsplash.com/featured/?hp,840g5",
+      "https://source.unsplash.com/featured/?hp,elitebook"
+    ],
+    "description": "HP EliteBook 840 G5 with slim design, Windows 11 Pro, and professional performance.",
+    "battery": "2 Hrs Backup",
+    "ports": "Wi-Fi, WebCam, Bluetooth",
+    "os": "Windows 11 Professional 64-bit",
+    "warranty": "3 Months Hardware Warranty"
+  },
+  {
+    "id": 17,
+    "brand": "Dell",
+    "name": "Dell Latitude 7490",
+    "processor": "Intel Core i7 8th Gen",
+    "ram": "16GB DDR4",
+    "storage": "512GB SSD",
+    "display": "14\" Full HD",
+    "gpu": "Intel UHD Graphics",
+    "price": "₹24,700",
+    "images": [
+      "https://source.unsplash.com/featured/?dell,7490",
+      "https://source.unsplash.com/featured/?dell,laptop"
+    ],
+    "description": "Premium Dell Latitude 7490 with i7, 16GB RAM, and backlit keyboard.",
+    "battery": "Excellent Backup",
+    "ports": "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
+    "os": "Windows 11 Professional 64-bit",
+    "warranty": "3 Months Hardware Warranty"
+  }
+]

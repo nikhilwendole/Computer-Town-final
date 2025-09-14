@@ -1,0 +1,50 @@
+ @import "tailwindcss";
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+/* src/index.css */
+
+
+/* Add the keyframes for the background animation */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Create a class that applies the animation */
+.animate-gradient {
+  background-size: 200% auto; /* Make the background larger than the element */
+  animation: gradient-flow 10s ease-in-out infinite; /* Apply the animation */
+}
+
+/* 
+
+.image-fade-enter {
+  opacity: 0.5;
+  transform: scale(0.98);
+}
+.image-fade-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+.image-fade-exit {
+  opacity: 0.5;
+  transform: scale(0.98);
+}
+.image-fade-exit-active {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 500ms ease, transform 500ms ease;
+} */
