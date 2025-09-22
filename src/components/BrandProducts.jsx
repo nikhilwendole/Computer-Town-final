@@ -187,7 +187,7 @@ export default function BrandProducts() {
 
           <div className="mb-4">
             <h3 className="font-semibold mb-2">Storage</h3>
-            {["256GB SSD", "512GB SSD", "1TB SSD"].map((s) => (
+            {["256GB NVME SSD", "512GB NVME SSD", "1TB NVME SSD"].map((s) => (
               <label key={s} className="flex items-center space-x-2 mb-1">
                 <input
                   type="checkbox"

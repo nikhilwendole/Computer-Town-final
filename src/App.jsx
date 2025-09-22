@@ -179,6 +179,7 @@ import BrandSelector from "./components/BrandSelector";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import AboutCard from "./components/AboutCard";
+import { AnimatePresence } from "framer-motion";
 
 // Lazy-loaded Pages
 const BrandProducts = lazy(() => import("./components/BrandProducts"));
@@ -189,6 +190,7 @@ const AccessoryGrid = lazy(() => import("./components/AccessoryGrid"));
 export default function App() {
   return (
     <Router>
+      <AnimatePresence mode="wait">
       <Routes>
         {/* Layout Route */}
         <Route path="/" element={<Layout />}>
@@ -247,6 +249,7 @@ export default function App() {
           />
         </Route>
       </Routes>
+      </AnimatePresence>
     </Router>
   );
 }

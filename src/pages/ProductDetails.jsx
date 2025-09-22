@@ -384,6 +384,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import laptops from "../data/laptop.js";
 
+
+
 export default function ProductDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -393,6 +395,9 @@ export default function ProductDetails() {
 
   // Ref to store the interval ID
   const intervalRef = useRef(null);
+
+  // const laptop = laptops.find((l) => l.id === Number(id));
+
 
   const laptop = laptops.find((l) => l.id === Number(id));
 
@@ -551,7 +556,7 @@ export default function ProductDetails() {
               <p className="text-gray-500 text-lg md:text-xl mt-1">{laptop.brand}</p>
               <div className="flex items-center text-lg mt-2">
                 <span className="text-yellow-400">★★★★☆</span>
-                <span className="text-gray-500 ml-2">(1,250 reviews)</span>
+                <span className="text-gray-500 ml-2">(1,250 reviews) </span>
               </div>
               <p className="text-green-600 text-6xl font-bold mt-4">{laptop.price}</p>
 
@@ -587,7 +592,7 @@ export default function ProductDetails() {
     </li>
     <li className="grid grid-cols-2 gap-4 border-b border-gray-200 pb-2 mb-2">
       <div className="flex items-center space-x-2">
-        {/* Storage Icon */}
+    
         <span className="text-blue-500">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />

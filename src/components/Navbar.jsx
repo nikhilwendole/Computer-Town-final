@@ -90,7 +90,7 @@ const Navbar = () => {
       <div className="flex items-center gap-3 md:hidden">
         <svg
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className={`h-6 w-6 cursor-pointer ${
+          className={`h-6 w-6 cursor-pointer  ${
             isScrolled ? "text-gray-800" : "text-white"
           }`}
           fill="none"
