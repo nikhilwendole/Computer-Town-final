@@ -48,3 +48,8 @@
   transform: scale(0.95);
   transition: opacity 500ms ease, transform 500ms ease;
 } */
+
+
+html {
+  scroll-behavior: smooth;
+}

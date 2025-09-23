@@ -169,8 +169,233 @@
 
 
 
-import React, { Suspense, lazy } from "react";
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+// import React, { Suspense, lazy } from "react";
+// import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+
+// // Components
+// import Navbar from "./components/Navbar";
+// import Hero from "./components/Hero";
+// import BrandSelector from "./components/BrandSelector";
+// import Services from "./components/Services";
+// import Contact from "./components/Contact";
+// import AboutCard from "./components/AboutCard";
+// import { AnimatePresence } from "framer-motion";
+
+// // Lazy-loaded Pages
+// const BrandProducts = lazy(() => import("./components/BrandProducts"));
+// const AllLaptopsPage = lazy(() => import("./components/AllLaptopsPage"));
+// const ProductDetails = lazy(() => import("./pages/ProductDetails"));
+// const AccessoryGrid = lazy(() => import("./components/AccessoryGrid"));
+
+// export default function App() {
+//   return (
+//     <Router>
+//       <AnimatePresence mode="wait">
+//       <Routes>
+//         {/* Layout Route */}
+//         <Route path="/" element={<Layout />}>
+          
+//           {/* Home Page */}
+//           <Route
+//             index
+//             element={
+//               <>
+//                 <Hero />            {/* Hero section with Explore Now button */}
+//                 <BrandSelector />   {/* Brand buttons */}
+//                 <Services />        {/* Services Section */}
+//                 <Contact />         {/* Contact Section */}
+//               </>
+//             }
+//           />
+
+//           {/* All Laptops Page */}
+//           <Route
+//             path="all-laptops"
+//             element={
+//               <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                 <AllLaptopsPage />
+//               </Suspense>
+//             }
+//           />
+
+//           {/* Brand Products Page */}
+//           <Route
+//             path="products/:brand"
+//             element={
+//               <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                 <BrandProducts />
+//               </Suspense>
+//             }
+//           />
+
+//           {/* Product Details Page */}
+//           <Route
+//             path="product/:id"
+//             element={
+//               <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                 <ProductDetails />
+//               </Suspense>
+//             }
+//           />
+
+//           {/* Accessories Page */}
+//           <Route
+//             path="accessories"
+//             element={
+//               <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                 <AccessoryGrid />
+//               </Suspense>
+//             }
+//           />
+//         </Route>
+//       </Routes>
+//       </AnimatePresence>
+//     </Router>
+//   );
+// }
+
+// // Layout Component with Navbar + Outlet + AboutCard
+// function Layout() {
+//   return (
+//     <>
+//       <Navbar />
+//       <main className="pt-18 px-2">
+//         <Outlet />
+//       </main>
+//       <AboutCard />
+//       {/* Future components like Footer, Reviews can be added here */}
+//       {/* <AccessoryGrid/> */}
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+// import React, { Suspense, lazy } from "react";
+// import { BrowserRouter as Router, Routes, Route, Outlet, useLocation } from "react-router-dom";
+
+// // Components
+// import Navbar from "./components/Navbar";
+// import Hero from "./components/Hero";
+// import BrandSelector from "./components/BrandSelector";
+// import Services from "./components/Services";
+// import Contact from "./components/Contact";
+// import AboutCard from "./components/AboutCard";
+// import { AnimatePresence } from "framer-motion";
+
+// // Lazy-loaded Pages
+// const BrandProducts = lazy(() => import("./components/BrandProducts"));
+// const AllLaptopsPage = lazy(() => import("./components/AllLaptopsPage"));
+// const ProductDetails = lazy(() => import("./pages/ProductDetails"));
+// const AccessoryGrid = lazy(() => import("./components/AccessoryGrid"));
+
+// export default function App() {
+//   return (
+//     <Router>
+//       <AnimatePresence mode="wait">
+//         <Routes>
+//           <Route path="/" element={<Layout />}>
+//             {/* Home Page */}
+//             <Route
+//               index
+//               element={
+//                 <>
+//                   <Hero />            {/* Hero section only */}
+//                   <BrandSelector />   
+//                   <Services />        
+//                   <Contact />         
+//                 </>
+//               }
+//             />
+
+//             {/* All Laptops Page */}
+//             <Route
+//               path="all-laptops"
+//               element={
+//                 <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                   <AllLaptopsPage />
+//                 </Suspense>
+//               }
+//             />
+
+//             {/* Brand Products Page */}
+//             <Route
+//               path="products/:brand"
+//               element={
+//                 <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                   <BrandProducts />
+//                 </Suspense>
+//               }
+//             />
+
+//             {/* Product Details Page */}
+//             <Route
+//               path="product/:id"
+//               element={
+//                 <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                   <ProductDetails />
+//                 </Suspense>
+//               }
+//             />
+
+//             {/* Accessories Page */}
+//             <Route
+//               path="accessories"
+//               element={
+//                 <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+//                   <AccessoryGrid />
+//                 </Suspense>
+//               }
+//             />
+//           </Route>
+//         </Routes>
+//       </AnimatePresence>
+//     </Router>
+//   );
+// }
+
+// // Layout Component with conditional Navbar
+// function Layout() {
+//   const location = useLocation();
+
+//   // Show Navbar on all pages except Home
+//   const showNavbar = location.pathname !== "/";
+
+//   return (
+//     <>
+//       {showNavbar && <Navbar />}
+
+//       <main className="pt-18 px-2">
+//         <Outlet />
+//       </main>
+
+//       <AboutCard />
+//     </>
+//   );
+// }
+
+
+
+
+
+
+
+
+  import React, { Suspense, lazy } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Outlet,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 
 // Components
 import Navbar from "./components/Navbar";
@@ -179,7 +404,6 @@ import BrandSelector from "./components/BrandSelector";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import AboutCard from "./components/AboutCard";
-import { AnimatePresence } from "framer-motion";
 
 // Lazy-loaded Pages
 const BrandProducts = lazy(() => import("./components/BrandProducts"));
@@ -187,84 +411,115 @@ const AllLaptopsPage = lazy(() => import("./components/AllLaptopsPage"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
 const AccessoryGrid = lazy(() => import("./components/AccessoryGrid"));
 
+// Scroll Animation Wrapper (global)
+const ScrollAnimationWrapper = ({ children, delay = 0 }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8, delay }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
 export default function App() {
   return (
     <Router>
       <AnimatePresence mode="wait">
-      <Routes>
-        {/* Layout Route */}
-        <Route path="/" element={<Layout />}>
-          
-          {/* Home Page */}
-          <Route
-            index
-            element={
-              <>
-                <Hero />            {/* Hero section with Explore Now button */}
-                <BrandSelector />   {/* Brand buttons */}
-                <Services />        {/* Services Section */}
-                <Contact />         {/* Contact Section */}
-              </>
-            }
-          />
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            {/* Home Page */}
+            <Route
+              index
+              element={
+                <>
+                  <Hero /> {/* Hero section only */}
+                  <ScrollAnimationWrapper delay={0.2}>
+                    <BrandSelector />
+                  </ScrollAnimationWrapper>
+                  <ScrollAnimationWrapper delay={0.4}>
+                    <Services />
+                  </ScrollAnimationWrapper>
+                  <ScrollAnimationWrapper delay={0.6}>
+                    <Contact />
+                  </ScrollAnimationWrapper>
+                </>
+              }
+            />
 
-          {/* All Laptops Page */}
-          <Route
-            path="all-laptops"
-            element={
-              <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
-                <AllLaptopsPage />
-              </Suspense>
-            }
-          />
+            {/* All Laptops Page */}
+            <Route
+              path="all-laptops"
+              element={
+                <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+                  <ScrollAnimationWrapper>
+                    <AllLaptopsPage />
+                  </ScrollAnimationWrapper>
+                </Suspense>
+              }
+            />
 
-          {/* Brand Products Page */}
-          <Route
-            path="products/:brand"
-            element={
-              <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
-                <BrandProducts />
-              </Suspense>
-            }
-          />
+            {/* Brand Products Page */}
+            <Route
+              path="products/:brand"
+              element={
+                <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+                  <ScrollAnimationWrapper>
+                    <BrandProducts />
+                  </ScrollAnimationWrapper>
+                </Suspense>
+              }
+            />
 
-          {/* Product Details Page */}
-          <Route
-            path="product/:id"
-            element={
-              <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
-                <ProductDetails />
-              </Suspense>
-            }
-          />
+            {/* Product Details Page */}
+            <Route
+              path="product/:id"
+              element={
+                <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+                  <ScrollAnimationWrapper>
+                    <ProductDetails />
+                  </ScrollAnimationWrapper>
+                </Suspense>
+              }
+            />
 
-          {/* Accessories Page */}
-          <Route
-            path="accessories"
-            element={
-              <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
-                <AccessoryGrid />
-              </Suspense>
-            }
-          />
-        </Route>
-      </Routes>
+            {/* Accessories Page */}
+            <Route
+              path="accessories"
+              element={
+                <Suspense fallback={<p className="text-center pt-20">Loading...</p>}>
+                  <ScrollAnimationWrapper>
+                    <AccessoryGrid />
+                  </ScrollAnimationWrapper>
+                </Suspense>
+              }
+            />
+          </Route>
+        </Routes>
       </AnimatePresence>
     </Router>
   );
 }
 
-// Layout Component with Navbar + Outlet + AboutCard
+// Layout Component with conditional Navbar
 function Layout() {
+  const location = useLocation();
+
+  // Show Navbar on all pages except Home
+  const showNavbar = location.pathname !== "/";
+
   return (
     <>
-      <Navbar />
+      {showNavbar && <Navbar />}
+
       <main className="pt-18 px-2">
         <Outlet />
       </main>
+
       <AboutCard />
-      {/* Future components like Footer, Reviews can be added here */}
-      {/* <AccessoryGrid/> */}
     </>
   );
 }

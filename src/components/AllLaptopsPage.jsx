@@ -525,6 +525,9 @@ export default function AllLaptopsPage() {
     navigate(`/product/${laptopId}`);
   };
 
+
+  
+
   return (
     <motion.div
       className="bg-gray-100 min-h-screen font-sans py-8 sm:py-12 px-5 sm:px-6 lg:px-8"
