@@ -4,10 +4,10 @@ import { FaTools, FaLaptopCode, FaNetworkWired, FaShieldAlt } from "react-icons/
 
 export default function Services() {
     return (
-        <section id="services" className="py-12 bg-gray-50">
+        <section id="services" className="py-12 bg-gray-90">
             <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Our Services</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 px-9 max-w-9xl mx-auto">
                 <div className="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-xl transition">
                     <FaTools className="text-4xl text-indigo-600 mb-4 mx-auto" />
                     <h3 className="text-xl font-semibold mb-2">Computer Repair</h3>

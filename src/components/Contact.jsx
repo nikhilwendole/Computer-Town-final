@@ -33,15 +33,15 @@ const team = [
 
 export default function Contact() {
     return (
-        <section id="contact" className="bg-gray-100 py-12 px-4">
-            <div className="max-w-6xl mx-auto text-center mb-12">
+        <section id="contact" className="bg-gray-100 py-5 px-4">
+            <div className="max-w-7xl mx-auto text-center mb-12">
                 <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
                 <p className="text-lg text-gray-600">
                     Connect with our team. Our experts are here to help you.
                 </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9 max-w-9xl mx-0">
                 {team.map((person, index) => (
                     <div
                         key={index}

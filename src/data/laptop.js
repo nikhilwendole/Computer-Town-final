@@ -288,7 +288,8 @@ export const laptops = [
         battery: "2 Hrs Backup",
         ports: "Wi-Fi, WebCam, Bluetooth",
         os: "Windows 11 Professional 64-bit",
-        warranty: "3 Months Hardware Warranty"
+        warranty: "3 Months Hardware Warranty",
+        discount : 10
     },
     {
         id: 14,
@@ -308,7 +309,8 @@ export const laptops = [
         battery: "2+ Hrs Backup",
         ports: "Wi-Fi, WebCam, Bluetooth",
         os: "Windows 10 Professional 64-bit",
-        warranty: "3 Months Hardware Warranty"
+        warranty: "3 Months Hardware Warranty",
+         discount: 20,
     },
     {
         id: 15,
@@ -328,7 +330,8 @@ export const laptops = [
         battery: "2+ Hrs Backup",
         ports: "Wi-Fi, WebCam, Bluetooth",
         os: "Windows 10 Professional 64-bit",
-        warranty: "3 Months Hardware Warranty"
+        warranty: "3 Months Hardware Warranty",
+         discount: 15,
     },
 
     {
@@ -349,7 +352,8 @@ export const laptops = [
         battery: "2 Hrs Backup",
         ports: "Wi-Fi, WebCam, Bluetooth",
         os: "Windows 11 Professional 64-bit",
-        warranty: "3 Months Hardware Warranty"
+        warranty: "3 Months Hardware Warranty",
+        discount: 5,
     },
     {
         id: 17,

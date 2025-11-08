@@ -15,7 +15,7 @@ export default function BrandSelector() {
 
     return (
     
-        <section id="brands" className="max-w-7xl mx-auto py-12 px-4">
+        <section id="brands" className="max-w-9xl mx-auto py-20 px-9">
             <h1 className="text-3xl font-bold text-center mb-8">Choose Your Brand</h1>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">

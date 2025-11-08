@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import laptops from "../data/laptop.js";
@@ -109,34 +111,42 @@ export default function BrandProducts() {
     window.scrollTo(0, 0);
   }, []);
 
-  // Laptop Card Component
-  const LaptopCard = ({ laptop }) => (
-    <div
-      className="p-5 shadow-md rounded-xl bg-white cursor-pointer hover:shadow-xl transition transform hover:scale-[1.02]"
-      onClick={() => navigate(`/product/${laptop.id}`)}
-    >
-      <img
-        src={
-          laptop.images && laptop.images.length > 0
-            ? laptop.images[0]
-            : "https://placehold.co/400x300/94a3b8/1e293b?text=No+Image"
-        }
-        alt={laptop.name}
-        className="w-full h-48 object-contain rounded-lg"
-      />
-      <h2 className="text-lg font-semibold mt-4">{laptop.name}</h2>
-      <p className="text-gray-500 mt-1">
-        {laptop.processor} | {laptop.ram} RAM
-      </p>
-      <p className="text-green-600 font-bold mt-2">{laptop.price}</p>
-    </div>
-  );
+  // ✅ Updated Laptop Card with discount ribbon
+  const LaptopCard = ({ laptop }) => {
+    const discount = laptop.discount || 0; // use discount from JSON
+
+    return (
+      <div
+        className="relative p-5 shadow-md rounded-xl bg-white cursor-pointer hover:shadow-xl transition transform hover:scale-[1.02]"
+        onClick={() => navigate(`/product/${laptop.id}`)}
+      >
+        {/* 🔻 Discount Ribbon (only show if discount exists) */}
+        {discount > 0 && (
+          <div className="absolute top-2 right-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-lg tracking-wide ">
+            {discount}% OFF
+          </div>
+        )}
+
+        <img
+          src={
+            laptop.images && laptop.images.length > 0
+              ? laptop.images[0]
+              : "https://placehold.co/400x300/94a3b8/1e293b?text=No+Image"
+          }
+          alt={laptop.name}
+          className="w-full h-48 object-contain rounded-lg"
+        />
+        <h2 className="text-lg font-semibold mt-4">{laptop.name}</h2>
+        <p className="text-gray-500 mt-1">
+          {laptop.processor} | {laptop.ram} RAM
+        </p>
+        <p className="text-green-600 font-bold mt-2">{laptop.price}</p>
+      </div>
+    );
+  };
 
   return (
-   <div className="bg-gray-100 min-h-screen font-[Inter] pt-10 px-0">
-  {/* Your content here */}
-
-
+    <div className="bg-gray-100 min-h-screen font-[Inter] pt-10 px-0">
       <div className="max-w-9xl mx-auto px-0 lg:px-10 flex flex-col md:flex-row gap-8">
         {/* Sidebar */}
         <aside

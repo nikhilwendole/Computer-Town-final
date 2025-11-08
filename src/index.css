@@ -53,3 +53,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+
+body {
+@apply bg-gradient-to-b from-[#F5F7FF] via-[#fffbee] to-[#E6EFFF] text-gray-800;
+  font-family: 'Outfit', sans-serif; /* Optional: global font */
+}
