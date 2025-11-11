@@ -127,7 +127,7 @@ const LaptopCarousel = () => {
   useEffect(() => {
     const scroll = () => {
       if (!isPaused && scrollRef.current) {
-        scrollRef.current.scrollBy({ left: 1, behavior: "smooth" });
+        scrollRef.current.scrollBy({ left: 5, behavior: "smooth" });
 
         if (
           scrollRef.current.scrollLeft + scrollRef.current.clientWidth >=
@@ -138,7 +138,7 @@ const LaptopCarousel = () => {
       }
     };
 
-    const interval = setInterval(scroll, 20);
+    const interval = setInterval(scroll, 50);
     return () => clearInterval(interval);
   }, [isPaused]);
 
@@ -179,7 +179,7 @@ const LaptopCarousel = () => {
       {/* 🌈 Glow Background */}
       <div className="absolute inset-0 opacity-40 bg-[radial-gradient(circle_at_top_right,_#a5f3fc_0%,_transparent_60%)]"></div>
 
-      <h2 className="relative text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-blue-400 text-5xl font-extrabold mb-12 text-center drop-shadow-xl tracking-wide z-10">
+      <h2 className="relative text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-blue-800 text-5xl font-extrabold mb-12 text-center drop-shadow-xl tracking-wide z-10">
         💻 Explore Our Premium Laptops
       </h2>
 

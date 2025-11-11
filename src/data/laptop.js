@@ -67,27 +67,59 @@ export const laptops = [
         warranty: "3 Months Hardware Warranty",
         
     },
+    // {
+    //     id: 3,
+    //     brand: "Dell",
+    //     name: "Dell Latitude 5411",
+    //     processor: "Intel Core i5-10400H 2.60GHz",
+    //     ram: "16GB DDR4 (Supports up to 32GB)",
+    //     storage: "512GB NVMe SSD (Supports up to 4TB)",
+    //     display: "14.1\" FHD Touch Screen",
+    //     gpu: "2GB NVIDIA Graphics",
+    //     price: "₹25,700",
+    //     images: [
+    //         dell,hp,
+    //         "https://source.unsplash.com/featured/?laptop,dell",
+    //         "https://source.unsplash.com/featured/?dell,latitude"
+    //     ],
+    //     description: "Performance beast with 10th Gen H-series CPU and NVIDIA graphics.",
+    //     battery: "3 Months Hardware Warranty",
+    //     ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
+    //     os: "Windows 11 Professional 64-bit",
+    //     warranty: "3 Months Hardware Warranty"
+    // },
     {
-        id: 3,
-        brand: "Dell",
-        name: "Dell Latitude 5411",
-        processor: "Intel Core i5-10400H 2.60GHz",
-        ram: "16GB DDR4 (Supports up to 32GB)",
-        storage: "512GB NVMe SSD (Supports up to 4TB)",
-        display: "14.1\" FHD Touch Screen",
-        gpu: "2GB NVIDIA Graphics",
-        price: "₹25,700",
-        images: [
-            dell,hp,
-            "https://source.unsplash.com/featured/?laptop,dell",
-            "https://source.unsplash.com/featured/?dell,latitude"
-        ],
-        description: "Performance beast with 10th Gen H-series CPU and NVIDIA graphics.",
-        battery: "3 Months Hardware Warranty",
-        ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
-        os: "Windows 11 Professional 64-bit",
-        warranty: "3 Months Hardware Warranty"
-    },
+  id: 3,
+  brand: "Dell",
+  name: "Dell Latitude 5411",
+  processor: "Intel Core i5-10400H 2.60GHz",
+  ram: "16GB DDR4 (Supports up to 32GB)",
+  storage: "512GB NVMe SSD (Supports up to 4TB)",
+  display: '14.1" FHD Touch Screen',
+  gpu: "2GB NVIDIA Graphics",
+  price: "₹25,700",
+  ramOptions: [
+    { size: "16GB", price: 0 },
+    { size: "32GB", price: 2500 }
+  ],
+  ssdOptions: [
+    { size: "512GB", price: 0 },
+    { size: "1TB", price: 3000 },
+    { size: "2TB", price: 5000 }
+  ],
+  images: [
+    dell,
+    hp,
+    "https://source.unsplash.com/featured/?laptop,dell",
+    "https://source.unsplash.com/featured/?dell,latitude"
+  ],
+  description: "Performance beast with 10th Gen H-series CPU and NVIDIA graphics.",
+  battery: "3 Months Hardware Warranty",
+  ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty"
+}
+,
     {
         id: 4,
         brand: "Dell",
@@ -552,7 +584,16 @@ export const laptops = [
         battery: "3+ Hrs Backup",
         ports: "USB-C, Thunderbolt 3, HDMI, RJ45, MicroSD, USB 3.2",
         os: "Windows 11 Professional 64-bit",
-        warranty: "3 Months Hardware Warranty"
+        warranty: "3 Months Hardware Warranty",
+         ramOptions: [
+      { label: "8GB", value: 0 },
+      { label: "16GB", value: 3500 },
+      { label: "32GB", value: 9500 },
+    ],
+    storageOptions: [
+      { label: "512GB SSD", value: 0 },
+      { label: "1TB SSD", value: 5000 },
+    ],
     },
     {
         id: 27,
@@ -575,7 +616,306 @@ export const laptops = [
         warranty: "3 Months Hardware Warranty"
     },
 
+
+
+
+
+
+
+  {
+    id: 28,
+    name: "Dell Inspiron 15",
+    image: "/images/dell-inspiron.jpg",
+    basePrice: 50000,
+    description: "Powerful everyday laptop with a sleek design.",
+    specifications: {
+      processor: "Intel Core i5 11th Gen",
+      display: "15.6-inch Full HD",
+      os: "Windows 11",
+      graphics: "Intel Iris Xe",
+    },
+    ramOptions: [
+      { label: "8GB", value: 0 },
+      { label: "16GB", value: 3000 },
+      { label: "32GB", value: 7000 },
+    ],
+    storageOptions: [
+      { label: "256GB SSD", value: 0 },
+      { label: "512GB SSD", value: 4000 },
+      { label: "1TB SSD", value: 8000 },
+    ],
+  },
+  {
+    id: 29,
+    name: "HP Pavilion X360",
+    image: "/images/hp-pavilion.jpg",
+    basePrice: 60000,
+    description: "Touchscreen convertible laptop perfect for students.",
+    specifications: {
+      processor: "Intel Core i7 12th Gen",
+      display: "14-inch Full HD Touch",
+      os: "Windows 11",
+      graphics: "Intel Iris Xe",
+    },
+    ramOptions: [
+      { label: "8GB", value: 0 },
+      { label: "16GB", value: 4000 },
+      { label: "32GB", value: 8000 },
+    ],
+    storageOptions: [
+      { label: "512GB SSD", value: 0 },
+      { label: "1TB SSD", value: 6000 },
+    ],
+  },
+  {
+    id: 30,
+    name: "Lenovo ThinkPad E14",
+    image: "/images/lenovo-thinkpad.jpg",
+    basePrice: 55000,
+    description: "Business-class durability with professional performance.",
+    specifications: {
+      processor: "AMD Ryzen 5 5500U",
+      display: "14-inch Full HD Anti-glare",
+      os: "Windows 11 Pro",
+      graphics: "AMD Radeon Graphics",
+    },
+    ramOptions: [
+      { label: "8GB", value: 0 },
+      { label: "16GB", value: 3500 },
+      { label: "32GB", value: 7500 },
+    ],
+    storageOptions: [
+      { label: "512GB SSD", value: 0 },
+      { label: "1TB SSD", value: 5000 },
+    ],
+
+  }
+
+
 ];
 export default laptops;
 
     
+
+
+
+
+
+
+
+
+
+// export const accessories = [
+//   {
+//     id: 1,
+//     name: "Gaming Mouse",
+//     price: 1499,
+//     image: "/images/accessories/gaming-mouse.jpg",
+//     specs: {
+//       "DPI": "16000",
+//       "RGB Lighting": "Yes",
+//       "Connection": "Wired",
+//     },
+//   },
+//   {
+//     id: 2,
+//     name: "Mechanical Keyboard",
+//     price: 2999,
+//     image: "/images/accessories/mechanical-keyboard.jpg",
+//     specs: {
+//       "Switch Type": "Blue",
+//       "RGB": "Customizable",
+//       "Connection": "USB",
+//     },
+//   },
+// ];
+
+
+
+// // ✅ Add a new accessories section
+// export const accessories = [
+//   {
+//     id: 101,
+//     name: "Gaming Mouse",
+//     category: "Gaming Accessories",
+//     price: 1499,
+//     img: "https://cdn.pixabay.com/photo/2016/11/29/09/32/mouse-1867774_1280.jpg",
+//     desc: "High-precision gaming mouse with customizable RGB lighting.",
+//     specs: {
+//       Brand: "Logitech",
+//       Connectivity: "Wired USB",
+//       DPI: "16000",
+//       RGB: "Yes",
+//       Warranty: "2 Years",
+//     },
+//   },
+//   {
+//     id: 102,
+//     name: "Mechanical Keyboard",
+//     category: "Gaming Accessories",
+//     price: 2999,
+//     img: "https://cdn.pixabay.com/photo/2020/03/23/13/55/keyboard-4969693_1280.jpg",
+//     desc: "Durable mechanical keyboard with RGB lighting and blue switches.",
+//     specs: {
+//       Brand: "Redragon",
+//       SwitchType: "Blue Switches",
+//       Connectivity: "USB Wired",
+//       Backlight: "RGB",
+//       Warranty: "1 Year",
+//     },
+//   },
+//   {
+//     id: 103,
+//     name: "Webcam",
+//     category: "Computer Accessories",
+//     price: 1999,
+//     img: "https://cdn.pixabay.com/photo/2018/05/09/10/48/webcam-3385962_1280.jpg",
+//     desc: "Full HD webcam ideal for video conferencing and streaming.",
+//     specs: {
+//       Brand: "Logitech",
+//       Resolution: "1080p Full HD",
+//       Mic: "Built-in",
+//       Focus: "Auto Focus",
+//       Warranty: "1 Year",
+//     },
+//   },
+// ];
+
+import acc from "../assets/acc.jpg";
+import acc2 from "../assets/acc2.jpg";
+import acc3 from "../assets/acc3.jpg";
+
+export const accessories = [
+  {
+    id: 1,
+    name: "Logitech G502 HERO Gaming Mouse",
+    category: "Gaming Accessories",
+    price: 5499,
+    image: "/images/accessories/mouse1.jpg",
+    images: [
+      acc,acc2,acc3
+    ],
+    specs: {
+      Sensor: "HERO 25K Optical Sensor",
+      DPI: "100 – 25,600",
+      Buttons: "11 Programmable",
+      Lighting: "RGB LIGHTSYNC",
+      Weight: "Adjustable 121g–139g",
+      Connectivity: "Wired USB",
+    },
+    about:
+      "The Logitech G502 HERO offers incredible precision and performance for competitive gamers. With customizable weights and RGB lighting, it combines comfort, style, and cutting-edge technology.",
+  },
+
+  {
+    id: 2,
+    name: "Corsair K95 RGB Platinum Mechanical Keyboard",
+    category: "Gaming Accessories",
+    price: 13999,
+    image: "/images/accessories/keyboard1.jpg",
+    images: [
+      "/images/accessories/keyboard1.jpg",
+      "/images/accessories/keyboard2.jpg",
+    ],
+    specs: {
+      Switches: "Cherry MX Speed Silver",
+      Backlight: "Per-key RGB",
+      Frame: "Aircraft-grade Aluminum",
+      Keys: "104 Keys + 6 Macro Keys",
+      Connectivity: "USB 2.0",
+      WristRest: "Detachable Magnetic",
+    },
+    about:
+      "The Corsair K95 RGB Platinum is a premium keyboard built for gaming enthusiasts. It delivers lightning-fast actuation, stunning RGB effects, and solid aluminum construction for a luxurious typing experience.",
+  },
+
+  {
+    id: 3,
+    name: "HyperX Cloud II Gaming Headset",
+    category: "Gaming Accessories",
+    price: 8999,
+    image: "/images/accessories/headset1.jpg",
+    images: [
+      "/images/accessories/headset1.jpg",
+      "/images/accessories/headset2.jpg",
+      "/images/accessories/headset3.jpg",
+    ],
+    specs: {
+      Driver: "53mm Dynamic",
+      Sound: "7.1 Virtual Surround",
+      Mic: "Detachable Noise-cancelling",
+      Connection: "USB / 3.5mm Jack",
+      Compatibility: "PC, PS, Xbox, Mobile",
+      Weight: "320g",
+    },
+    about:
+      "The HyperX Cloud II is engineered for comfort and superior sound. With memory foam ear cushions and immersive 7.1 surround audio, it’s perfect for long gaming sessions and professional use.",
+  },
+
+  {
+    id: 4,
+    name: "Dell UltraSharp 27-inch 4K Monitor (U2720Q)",
+    category: "Computer Accessories",
+    price: 42999,
+    image: "/images/accessories/monitor1.jpg",
+    images: [
+      "/images/accessories/monitor1.jpg",
+      "/images/accessories/monitor2.jpg",
+    ],
+    specs: {
+      Display: "27-inch 4K UHD (3840 x 2160)",
+      Panel: "IPS, Anti-glare",
+      Brightness: "350 nits",
+      Ports: "USB-C, HDMI, DisplayPort",
+      ColorAccuracy: "99% sRGB coverage",
+      Warranty: "3 Years",
+    },
+    about:
+      "Experience ultra-clear visuals with the Dell UltraSharp 4K monitor. Ideal for designers and creators, it offers precise color accuracy and multiple connectivity options including USB-C charging.",
+  },
+
+  {
+    id: 5,
+    name: "Cooler Master MP511 RGB Mouse Pad",
+    category: "Computer Accessories",
+    price: 2499,
+    image: "/images/accessories/mousepad1.jpg",
+    images: [
+      "/images/accessories/mousepad1.jpg",
+      "/images/accessories/mousepad2.jpg",
+    ],
+    specs: {
+      Material: "Durable Cordura Fabric",
+      Lighting: "Dynamic RGB Edge",
+      Size: "900mm x 400mm",
+      Surface: "Smooth Control",
+      Power: "USB Powered",
+    },
+    about:
+      "Add style and control to your setup with the Cooler Master MP511 RGB mouse pad. Built for precision tracking and smooth movement, it’s perfect for gamers and professionals alike.",
+  },
+
+  {
+    id: 6,
+    name: "TP-Link Archer AX73 Wi-Fi 6 Router",
+    category: "Computer Accessories",
+    price: 9999,
+    image: "/images/accessories/router1.jpg",
+    images: [
+      "/images/accessories/router1.jpg",
+      "/images/accessories/router2.jpg",
+    ],
+    specs: {
+      Speed: "Up to 5400 Mbps",
+      Frequency: "Dual Band (2.4GHz + 5GHz)",
+      Ports: "1x Gigabit WAN, 4x Gigabit LAN",
+      Antennas: "6 High-Gain Antennas",
+      WiFiStandard: "802.11ax (Wi-Fi 6)",
+    },
+    about:
+      "The TP-Link Archer AX73 brings ultra-fast Wi-Fi 6 performance to your home. With multiple antennas and MU-MIMO technology, it ensures reliable and smooth connectivity for all your devices.",
+  },
+];
+
+
+

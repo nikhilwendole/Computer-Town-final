@@ -26,8 +26,9 @@ const SlidersHorizontal = () => (
 );
 
 export default function BrandProducts() {
-  const { brand } = useParams();
+  const { brand } = useParams(); // ✅ Get brand from URL
   const navigate = useNavigate();
+
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [sortOption, setSortOption] = useState("price-asc");
   const [filters, setFilters] = useState({
@@ -38,6 +39,7 @@ export default function BrandProducts() {
     price: [0, 200000],
   });
 
+  // ✅ Handle checkbox changes
   const handleCheckbox = (category, value) => {
     setFilters((prev) => ({
       ...prev,
@@ -47,6 +49,7 @@ export default function BrandProducts() {
     }));
   };
 
+  // ✅ Clear all filters
   const clearFilters = () => {
     setFilters({
       processor: [],
@@ -57,42 +60,51 @@ export default function BrandProducts() {
     });
   };
 
-  // Brand filter (all laptops if no brand)
+  // ✅ Brand filtering (Safe and dynamic)
   const brandFiltered = brand
-    ? laptops.filter((l) => l.brand.toLowerCase() === brand.toLowerCase())
+    ? laptops.filter(
+        (l) =>
+          l.brand &&
+          l.brand.toLowerCase() === brand.toLowerCase()
+      )
     : laptops;
 
-  // Apply filters
+  // ✅ Apply user filters
   const filteredLaptops = brandFiltered.filter((laptop) => {
     const matchProcessor =
       filters.processor.length === 0 ||
       filters.processor.some((p) =>
-        laptop.processor.toLowerCase().includes(p.toLowerCase())
+        laptop.processor?.toLowerCase().includes(p.toLowerCase())
       );
+
     const matchRam =
       filters.ram.length === 0 ||
-      filters.ram.some((r) => laptop.ram.toLowerCase().includes(r.toLowerCase()));
+      filters.ram.some((r) => laptop.ram?.toLowerCase().includes(r.toLowerCase()));
+
     const matchStorage =
       filters.storage.length === 0 ||
       filters.storage.some((s) =>
-        laptop.storage.toLowerCase().includes(s.toLowerCase())
+        laptop.storage?.toLowerCase().includes(s.toLowerCase())
       );
+
     const matchTouch =
       filters.touchscreen.length === 0 ||
       (laptop.display &&
         filters.touchscreen.some((t) =>
           laptop.display.toLowerCase().includes(t.toLowerCase())
         ));
-    const numericPrice = Number(laptop.price.replace(/[^0-9]/g, ""));
+
+    const numericPrice = Number(laptop.price?.replace(/[^0-9]/g, "")) || 0;
     const matchPrice =
       numericPrice >= filters.price[0] && numericPrice <= filters.price[1];
+
     return matchProcessor && matchRam && matchStorage && matchTouch && matchPrice;
   });
 
-  // Sorting
+  // ✅ Sorting logic
   const sortedLaptops = [...filteredLaptops].sort((a, b) => {
-    const priceA = Number(a.price.replace(/[^0-9]/g, ""));
-    const priceB = Number(b.price.replace(/[^0-9]/g, ""));
+    const priceA = Number(a.price?.replace(/[^0-9]/g, "")) || 0;
+    const priceB = Number(b.price?.replace(/[^0-9]/g, "")) || 0;
     switch (sortOption) {
       case "price-asc":
         return priceA - priceB;
@@ -111,18 +123,17 @@ export default function BrandProducts() {
     window.scrollTo(0, 0);
   }, []);
 
-  // ✅ Updated Laptop Card with discount ribbon
+  // ✅ Laptop card
   const LaptopCard = ({ laptop }) => {
-    const discount = laptop.discount || 0; // use discount from JSON
+    const discount = laptop.discount || 0;
 
     return (
       <div
         className="relative p-5 shadow-md rounded-xl bg-white cursor-pointer hover:shadow-xl transition transform hover:scale-[1.02]"
         onClick={() => navigate(`/product/${laptop.id}`)}
       >
-        {/* 🔻 Discount Ribbon (only show if discount exists) */}
         {discount > 0 && (
-          <div className="absolute top-2 right-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-lg tracking-wide ">
+          <div className="absolute top-2 right-2 bg-gradient-to-r from-pink-500 to-orange-500 text-white text-[11px] font-bold px-3 py-1 rounded-full shadow-lg tracking-wide">
             {discount}% OFF
           </div>
         )}
@@ -138,7 +149,7 @@ export default function BrandProducts() {
         />
         <h2 className="text-lg font-semibold mt-4">{laptop.name}</h2>
         <p className="text-gray-500 mt-1">
-          {laptop.processor} | {laptop.ram} RAM
+          {laptop.processor} | {laptop.ram}
         </p>
         <p className="text-green-600 font-bold mt-2">{laptop.price}</p>
       </div>
@@ -166,7 +177,7 @@ export default function BrandProducts() {
             </button>
           </div>
 
-          {/* Filters */}
+          {/* Processor */}
           <div className="mb-4">
             <h3 className="font-semibold mb-2">Processor</h3>
             {["i3", "i5", "i7", "Ryzen 5", "Ryzen 7"].map((p) => (
@@ -181,6 +192,7 @@ export default function BrandProducts() {
             ))}
           </div>
 
+          {/* RAM */}
           <div className="mb-4">
             <h3 className="font-semibold mb-2">RAM</h3>
             {["4GB", "8GB", "16GB"].map((r) => (
@@ -195,6 +207,7 @@ export default function BrandProducts() {
             ))}
           </div>
 
+          {/* Storage */}
           <div className="mb-4">
             <h3 className="font-semibold mb-2">Storage</h3>
             {["256GB NVME SSD", "512GB NVME SSD", "1TB NVME SSD"].map((s) => (
@@ -221,7 +234,7 @@ export default function BrandProducts() {
         <div className="flex-1">
           <div className="flex justify-between items-center mb-6 flex-wrap gap-4">
             <h2 className="text-3xl font-bold">
-              {brand ? brand : "All"} Laptops
+              {brand ? brand.toUpperCase() : "All"} Laptops
             </h2>
             <div className="flex items-center gap-4 flex-wrap">
               <button
@@ -257,3 +270,4 @@ export default function BrandProducts() {
     </div>
   );
 }
+

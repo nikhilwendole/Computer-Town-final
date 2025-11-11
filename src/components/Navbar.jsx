@@ -170,6 +170,7 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import logoImg from "../assets/bgremoveimg.png";
 import logoText from "../assets/bgremovetext.png";
+import logotry from "../assets/logotry.png"
 
 const Navbar = () => {
   const navLinks = [
@@ -178,6 +179,7 @@ const Navbar = () => {
     { name: "Services", path: "/#services" },
     { name: "Contact", path: "/#contact" },
     { name: "About", path: "/#about" },
+    { name: "Accessories", path: "/accessories" }, // ✅ fixed route
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
