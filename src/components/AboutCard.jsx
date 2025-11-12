@@ -118,7 +118,7 @@ const AboutUsPage = () => {
                   <h3 className="font-bold text-xl mb-4">Connect With Us</h3>
                   <div className="flex space-x-8 justify-center md:justify-start">
                     <a
-                      href="https://www.instagram.com/yourcomputertown"
+                      href="https://www.instagram.com/computer_town9637170075?igsh=MW85dXUzYW1lcmlrZQ=="
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-pink-500 text-3xl"
@@ -134,7 +134,7 @@ const AboutUsPage = () => {
                       <FaFacebook />
                     </a>
                     <a
-                      href={`https://wa.me/${phoneNumber}`}
+                      href={`https://wa.me/${9637170075}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-green-500 text-3xl"

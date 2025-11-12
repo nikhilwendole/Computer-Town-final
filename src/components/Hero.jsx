@@ -413,7 +413,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-[100vh] overflow-hidden">
+    <div className="relative w-full h-[110vh] sm:h-[105vh] flex items-center  overflow-hidden">
+    {/* // <div className="relative w-full h-[110vh] sm:h-[110vh] flex items-center justify-center bg-gray-100"> */}
+
       {/* Image Slider */}
       <div
         className="flex transition-transform duration-[2000ms] ease-in-out"

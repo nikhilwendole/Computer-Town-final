@@ -86,9 +86,9 @@ export default function AllLaptopsPage() {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 w-full">
           <select name="brand" value={filters.brand} onChange={handleFilterChange} className="p-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-700">
             <option value="">All Brands</option>
-            <option value="Dell">Dell</option>
+            <option value="DELL">Dell</option>
             <option value="HP">HP</option>
-            <option value="Lenovo">Lenovo</option>
+            <option value="LENOVO">Lenovo</option>
           </select>
 
           <select name="ram" value={filters.ram} onChange={handleFilterChange} className="p-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-700">
@@ -100,15 +100,15 @@ export default function AllLaptopsPage() {
 
           <select name="storage" value={filters.storage} onChange={handleFilterChange} className="p-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-700">
             <option value="">All Storage</option>
-            <option value="256GB SSD">256GB SSD</option>
-            <option value="512GB SSD">512GB SSD</option>
-            <option value="1TB SSD">1TB SSD</option>
+            <option value="256GB NVMe SSD">256GB SSD</option>
+            <option value="512GB NVMe SSD">512GB SSD</option>
+            <option value="1TB NVMe SSD">1TB SSD</option>
           </select>
 
           <select name="processor" value={filters.processor} onChange={handleFilterChange} className="p-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-700">
             <option value="">All Processors</option>
-            <option value="Intel i5">Intel i5</option>
-            <option value="Intel i7">Intel i7</option>
+            <option value="Intel Core i5 - 8th Gen">  Intel Core i5 - 8th Gen</option>
+            <option value="Intel Core i5 - 11th Gen"> Intel Core i5 - 11th Gen</option>
             <option value="Ryzen 5">Ryzen 5</option>
             <option value="Ryzen 7">Ryzen 7</option>
           </select>

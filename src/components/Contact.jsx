@@ -33,7 +33,7 @@ const team = [
 
 export default function Contact() {
     return (
-        <section id="contact" className="bg-gray-100 py-5 px-4">
+        <section id="contact" className="bg-gradient-to-b from-[#F5F7FF] via-[#fffbee] to-[#E6EFFF] text-gray-800 py-5 px-4">
             <div className="max-w-7xl mx-auto text-center mb-12">
                 <h2 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
                 <p className="text-lg text-gray-600">

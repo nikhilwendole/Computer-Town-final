@@ -407,6 +407,7 @@ export default function App() {
                     <BrandSelector />
                     <Services />
                     <Contact />
+                    <Accessories/>
                   </ScrollAnimationWrapper>
                 </>
               }
@@ -475,7 +476,7 @@ function Layout() {
   return (
     <>
       <Navbar />
-      <main className="pt-18 px-2">
+      <main className="pt-18 px-0">
         <Outlet />
       </main>
       <AboutCard />

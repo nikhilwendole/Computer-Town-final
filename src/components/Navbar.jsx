@@ -194,12 +194,12 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full flex items-center justify-between 
-      px-3 sm:px-6 md:px-10 lg:px-14 xl:px-20 
+      px-9 sm:px-6 md:px-10 lg:px-14 xl:px-20 
       transition-all duration-500 z-50 
       ${
         isScrolled
           ? "bg-white/90 backdrop-blur-md shadow-md text-gray-800 py-2"
-          : "bg-transparent text-black py-3"
+          : "bg-transparent text-black py-5"
       }`}
     >
       {/* Logo */}
@@ -207,12 +207,12 @@ const Navbar = () => {
         <img
           src={logoImg}
           alt="Computer Town Logo"
-          className="h-9 transition-transform duration-300 group-hover:scale-110"
+          className="h-18 transition-transform duration-300 group-hover:scale-110"
         />
         <img
           src={logoText}
           alt="Computer Town Text"
-          className="h-9 pl-9 sm:pl-9 transition-transform duration-300 group-hover:scale-110"
+          className="h-15 pl-70 sm:pl-9 transition-transform duration-300 group-hover:scale-110"
         />
       </Link>
 
@@ -324,9 +324,9 @@ const Navbar = () => {
           )
         )}
 
-        <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-10 py-3 rounded-full mt-4 hover:scale-105 hover:shadow-lg transition-all">
+        {/* <button className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold px-10 py-3 rounded-full mt-4 hover:scale-105 hover:shadow-lg transition-all">
           Login
-        </button>
+        </button> */}
       </div>
     </nav>
   );

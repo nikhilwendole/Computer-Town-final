@@ -207,7 +207,7 @@
 
 
 
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { accessories } from "../data/laptop"; // ✅ Local data import
@@ -215,6 +215,10 @@ import { accessories } from "../data/laptop"; // ✅ Local data import
 const Accessories = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const navigate = useNavigate();
+
+   useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   // ✅ Define main categories
   const categories = [
@@ -241,6 +245,7 @@ const Accessories = () => {
   };
 
   return (
+    <section id="accessories">
     <div className="min-h-screen bg-gradient-to-b  text-white py-16 px-6">
       {!selectedCategory ? (
         <>
@@ -348,6 +353,7 @@ const Accessories = () => {
         </>
       )}
     </div>
+    </section>
   );
 };
 
