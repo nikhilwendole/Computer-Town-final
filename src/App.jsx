@@ -374,7 +374,7 @@ import AccessoryDetails from "./pages/AccessoryDetails";
 const BrandProducts = lazy(() => import("./components/BrandProducts"));
 const AllLaptopsPage = lazy(() => import("./components/AllLaptopsPage"));
 const ProductDetails = lazy(() => import("./pages/ProductDetails"));
-const AdminLogin = lazy(() => import("./pages/AdminLogin"));
+// const AdminLogin = lazy(() => import("./pages/AdminLogin"));
 const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
 
 // Animation Wrapper
@@ -407,7 +407,7 @@ export default function App() {
                     <BrandSelector />
                     <Services />
                     <Contact />
-                    <Accessories/>
+            
                   </ScrollAnimationWrapper>
                 </>
               }

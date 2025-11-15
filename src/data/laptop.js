@@ -89,6 +89,37 @@ import img52 from '../assets/Dell 7300/6404.jpg';
 
 
 
+import img53 from '../assets/Dell 7300/L131.jpg';
+import img54 from '../assets/Dell 7300/L132.jpg';
+import img55 from '../assets/Dell 7300/L133.jpg';
+import img56 from '../assets/Dell 7300/L134.jpg';
+import img57 from '../assets/Dell 7300/L135.jpg';
+import img58 from '../assets/Dell 7300/L136.jpg';
+
+
+import img59 from '../assets/Dell 7300/car1.jpeg';
+import img60 from '../assets/Dell 7300/car2.jpeg';
+import img61 from '../assets/Dell 7300/car3.jpeg';
+
+import img62 from '../assets/Dell 7300/7450 (1).jpeg';
+import img63 from '../assets/Dell 7300/7450 (2).jpeg';
+import img64 from '../assets/Dell 7300/7450 (3).jpeg';
+
+import img65 from '../assets/Dell 7300/7410 (1).jpeg';
+import img66 from '../assets/Dell 7300/7410 (2).jpeg';
+import img67 from '../assets/Dell 7300/7410 (3).jpeg';
+import img68 from '../assets/Dell 7300/7410 (4).jpeg';
+import img69 from '../assets/Dell 7300/7410 (5).jpeg';
+
+import img70 from '../assets/Dell 7300/hp12 (1).jpeg';
+import img71 from '../assets/Dell 7300/hp12 (2).jpeg';
+import img72 from '../assets/Dell 7300/hp12 (3).jpeg';
+
+
+
+
+
+
 
 
 
@@ -323,7 +354,7 @@ RJ45`,
   display: '14" HD Anti-Glare LED Screen',
   gpu: "Intel UHD Graphics",
   price: "₹14,300",
-  images: [img44, img45, img46, img47,img48], // replace with actual image imports
+  images: [img62,img63,img64], // replace with actual image imports
   description: "Dell Latitude E7450 with 5th Gen i5, 8GB DDR3 RAM, and 512GB M-SATA SSD – reliable laptop for business and daily use.",
   battery: "2+ Hrs Backup",
   ports: "Wi-Fi / WebCam / Bluetooth",
@@ -349,6 +380,537 @@ RJ45`,
   warranty: "3 Months Hardware Warranty",
   free: "Laptop Bag (New), Mouse (New Box Pack)",
 },
+
+
+{
+  id: 23, // you can change or remove later
+  brand: "Lenovo",
+  name: "Lenovo ThinkPad P51",
+  processor: "Intel Core i7 - 7th Gen (4 Core / 8 Thread)",
+  ram: "16GB DDR4 (128GB Supported)",
+  storage: "512GB NVMe SSD",
+  display: '17.3" Full HD (1920x1080)',
+  gpu: "NVIDIA Quadro 4GB Graphics",
+  price: "₹26,900",
+   images: [img14, img15, img16, img17],  // replace with actual imports
+  description:
+    "Lenovo ThinkPad P51 Workstation with i7 7th Gen processor, 16GB RAM, NVMe SSD, 4GB Quadro graphics, and 17.3-inch FHD display.",
+  battery: "2 Hrs Backup",
+  ports: "Wi-Fi / WebCam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "New Laptop Bag, USB Mouse, Lenovo Original Charger",
+},
+
+
+{
+  id: 12, // you can change or remove anytime
+  brand: "Lenovo",
+  name: "Lenovo ThinkPad T14 Gen 2",
+  processor: "Intel Core i5 - 11th Gen",
+  ram: "16GB DDR4 (24GB Supported)",
+  storage: "512GB NVMe SSD",
+  display: '14" FHD (1920x1080) IPS Anti-glare',
+  gpu: "Intel UHD Graphics",
+  price: "₹26,900",
+  images: [img1, img2, img3, img4], // replace with actual images
+  description:
+    "Lenovo ThinkPad T14 Gen 2 with 11th Gen i5 processor, 16GB RAM, 512GB NVMe SSD, Wi-Fi 6, multiple ports, and IPS FHD display.",
+  battery: "3+ Hrs Backup",
+  ports:
+    "Wi-Fi 6, Bluetooth 5.1, USB 3.2 Gen 1, USB-C Thunderbolt 3, USB-C (Power Delivery), HDMI 1.4, RJ45, MicroSD reader, Headphone/mic combo",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "New Laptop Bag, USB Mouse",
+},
+
+{
+  id: 13, // you can change or remove anytime
+  brand: "Lenovo",
+  name: "Lenovo ThinkPad T14 Gen 1",
+  processor: "Intel Core i5 - 10th Gen",
+  ram: "16GB DDR4 (24GB Supported)",
+  storage: "512GB NVMe SSD",
+  display: '14" FHD (1920 x 1080) IPS Anti-glare',
+  gpu: "Intel UHD Graphics",
+  price: "₹25,300",
+  images: [img1, img2, img3, img4], // replace with actual imports
+  description:
+    "Lenovo ThinkPad T14 Gen 1 with 10th Gen i5 processor, 16GB RAM, 512GB NVMe SSD, Wi-Fi 6, powerful security, and IPS anti-glare display.",
+  battery: "3+ Hrs Backup",
+  ports:
+    "Wi-Fi 6, Bluetooth 5.1, USB 3.2 Gen 1, USB-C Thunderbolt 3, USB-C (PD + DisplayPort), HDMI 1.4, RJ45, MicroSD reader, Headphone/mic combo",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "New Laptop Bag, USB Mouse",
+},
+
+
+{
+  id: 14, // change/remove if needed
+  brand: "Lenovo",
+  name: "Lenovo ThinkPad L490",
+  processor: "Intel Core i5 - 8th Gen (8350U) | 4 Core 8 Thread",
+  ram: "16GB DDR4 (32GB Supported)",
+  storage: "512GB SSD",
+  display: '14.1" HD/FHD Screen',
+  gpu: "Intel UHD Graphics 620",
+  price: "₹19,300",
+  images: [img39, img40, img41, img42,img43], // replace with actual images
+  description:
+    "Lenovo ThinkPad L490 powered by Intel i5 8th Gen, 16GB DDR4 RAM, 512GB SSD, UHD 620 graphics, and a durable ThinkPad design.",
+  battery: "2+ Hrs Backup",
+  ports: "Wi-Fi / WebCam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag (New), USB Mouse (New Box Pack)",
+},
+
+{
+  id: 15, // you can change or remove
+  brand: "Dell",
+  name: "Dell Latitude 3410",
+  processor: "Intel Core i5 - 10th Gen",
+  ram: "8GB DDR4",
+  storage: "256GB NVMe SSD",
+  display: '14.1" Anti-Glare Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹20,500",
+  images: [img1, img2, img3, img4], // replace with your image imports
+  description:
+    "Dell Latitude 3410 powered by Intel 10th Gen i5 processor, 8GB RAM, 256GB NVMe SSD with a professional and durable design.",
+  battery: "3+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag (New), USB Mouse (New Box Pack)",
+},
+
+ {
+  id: 16, // you can modify or remove
+  brand: "Lenovo",
+  name: "Lenovo ThinkPad L490",
+  processor: "Intel Core i5 - 8th Gen (8350U), 4 Cores / 8 Threads",
+  ram: "8GB DDR4 (32GB Supported)",
+  storage: "256GB SSD",
+  display: '14.1" Screen',
+  gpu: "Intel UHD Graphics 620",
+  price: "₹15,300",
+  images: [img39, img40, img41, img42,img43], // replace with actual image imports
+  description:
+    "Lenovo ThinkPad L490 with 8th Gen Intel i5 processor, 8GB RAM, and 256GB SSD. Lightweight, durable, and ideal for professional use.",
+  battery: "2 Hrs Backup",
+  ports: "Wi-Fi / WebCam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+
+ {
+  id: 17, // change or remove if needed
+  brand: "Lenovo",
+  name: "Lenovo ThinkPad T480",
+  processor: "Intel Core i5 - 8th Gen",
+  ram: "8GB DDR4 (32GB Supported)",
+  storage: "256GB NVMe SSD",
+  display: '14.1" FHD Screen (1920 x 1080)',
+  gpu: "Intel UHD Graphics",
+  price: "₹16,900",
+  images: [img39, img40, img41, img42,img43], // replace with actual image imports
+  description:
+    "Lenovo ThinkPad T480 with 8th Gen Intel Core i5, 8GB DDR4 RAM, and 256GB NVMe SSD. Durable business laptop with great performance.",
+  battery: "2+ Hrs Backup",
+  ports: "Wi-Fi / WebCam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id: 18, // change or remove if needed
+  brand: "Acer",
+  name: "Acer Aspire 5",
+  processor: "Intel Core i5 - 13th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe Gen4 SSD",
+  display: '15.6" Anti-Glare Screen',
+  gpu: "NVIDIA GeForce RTX 2050 (4GB)",
+  price: "₹31,500",
+  images: [img1, img2, img3, img4], // replace with actual image imports
+  description:
+    "Acer Aspire 5 powered by Intel i5-13th Gen processor, RTX 2050 4GB GPU, 16GB DDR4 RAM and 512GB Gen4 SSD. Great for gaming, editing, and multitasking.",
+  battery: "3+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id: 19, // change or remove if needed
+  brand: "DELL",
+  name: "DELL LATITUDE 7480",
+  processor: "Intel Core i5 - 7th Gen",
+  ram: "8GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" FHD LED Screen',
+  gpu: "Intel HD Graphics",
+  price: "₹18,500",
+   images: [img28, img29, img30, img31,img32,img33], // replace with actual image imports
+  description:
+    "Dell Latitude 7480 with Intel i5-7th Gen, 8GB RAM, 512GB SSD, FHD display, and strong build quality. Suitable for office, study, and daily work.",
+  battery: "2 Hrs Backup",
+  ports: "Wi-Fi / WebCam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id: 20, // change or remove if needed
+  brand: "DELL",
+  name: "DELL LATITUDE 7480",
+  processor: "Intel Core i5 - 7th Gen",
+  ram: "8GB DDR4",
+  storage: "256GB NVMe SSD",
+  display: '14" FHD LED Screen',
+  gpu: "Intel HD Graphics",
+  price: "₹16,500",
+  images: [img28, img29, img30, img31,img32,img33], // replace with actual image imports
+  description:
+    "Dell Latitude 7480 with Intel i5-7th Gen, 8GB RAM, 256GB SSD, and FHD display. A reliable business laptop ideal for office and study use.",
+  battery: "2 Hrs Backup",
+  ports: "Wi-Fi / WebCam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id: 21, // remove or change if needed
+  brand: "HP",
+  name: "HP 34S G7 Notebook PC",
+  processor: "Intel Core i5 - 10th Gen",
+  ram: "8GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14.1" Anti Glare Screen',
+  gpu: "Intel UHD Graphics", // generic as not mentioned
+  price: "₹21,900",
+  images: [img1, img2, img3, img4], // replace with actual image imports
+  description:
+    "HP 34S G7 Notebook PC with Intel i5-10th Gen, 8GB RAM, 512GB SSD, and Anti-Glare display. Perfect for productivity and daily use.",
+  battery: "3 Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id: 22, // remove or change if needed
+  brand: "LENOVO",
+  name: "Lenovo ThinkPad X1 Yoga Gen 6",
+  processor: "Intel Core i7 - 11th Gen",
+  ram: "32GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14.1" IPS 360° Touch Screen with Stylus',
+  gpu: "Intel Xe Graphics",
+  price: "₹43,500",
+  images: [img53,img54,img55, img56, img57, img58], // replace with real images
+  description:
+    "Premium Lenovo ThinkPad X1 Yoga Gen 6 with 360° Touch IPS display, stylus support, powerful i7-11th Gen processor, and 32GB RAM.",
+  battery: "3 Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+ {
+  id:24,
+  brand: "DELL",
+  name: "DELL LATITUDE 3410",
+  processor: "Intel Core i5 - 10th Gen",
+  ram: "8GB DDR4",
+  storage: "256GB NVMe SSD",
+  display: '14.1" Anti Glare Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹20,500",
+  images: [img1, img2, img3, img4], // replace with real image imports
+  description:
+    "Dell Latitude 3410 with 10th Gen Intel i5 processor, 8GB DDR4 RAM, 256GB NVMe SSD, and 14.1-inch Anti Glare Display. Lightweight, reliable, and ideal for work and study.",
+  battery: "3+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+ {
+  id:25,
+  brand: "DELL",
+  name: "DELL LATITUDE 5400",
+  processor: "Intel Core i5 - 8th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" FHD LED Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹22,300",
+  images: [img5,img6,img7,img8,img9], // replace with actual images
+  description:
+    "Dell Latitude 5400 with 8th Gen Intel i5 processor, 16GB DDR4 RAM, 512GB NVMe SSD, and 14-inch FHD LED display. Fast, reliable, ideal for office and business use.",
+  battery: "3 Hrs Backup",
+  ports: "Wi-Fi / WebCam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+
+{
+  id:26,
+  brand: "DELL",
+  name: "Dell Latitude 7420",
+  processor: "Intel Core i7 - 11th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" Full HD Anti-glare Display',
+  gpu: "Intel Integrated Graphics",
+  price: "₹32,800",
+  images: [img65, img66, img67, img68,img69], // replace with actual images
+  description:
+    "Dell Latitude 7420 – Premium business laptop powered by 11th Gen Intel Core i7, 16GB DDR4 RAM, and 512GB NVMe SSD. Lightweight, durable, and perfect for professional use.",
+  battery: "2 Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+ {
+  id:27,
+  brand: "DELL",
+  name: "Dell Latitude 5400",
+  processor: "Intel Core i7 - 8th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" FHD LED Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹24,300",
+  images: [img5,img6,img7,img8,img9], // replace with real images
+  description:
+    "Dell Latitude 5400 with Intel Core i7 8th Gen, 16GB DDR4 RAM, and 512GB NVMe SSD. A premium business laptop combining performance and reliability.",
+  battery: "2+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id:28,
+  brand: "DELL",
+  name: "Dell Latitude 5400",
+  processor: "Intel Core i7 - 8th Gen",
+  ram: "8GB DDR4",
+  storage: "256GB NVMe SSD",
+  display: '14" FHD LED',
+  gpu: "Intel UHD Graphics",
+  price: "₹20,300",
+  images: [img5,img6,img7,img8,img9], // replace with actual images
+  description:
+    "Dell Latitude 5400 powered by Intel Core i7 8th Gen with 8GB RAM and 256GB NVMe SSD. Reliable performance with premium build quality.",
+  battery: "3 Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+
+{
+  id:29,
+  brand: "DELL",
+  name: "Dell Latitude E7450",
+  processor: "Intel Core i5 - 5th Gen",
+  ram: "8GB DDR3",
+  storage: "256GB M-SATA SSD",
+  display: '14" HD Anti Glare LED Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹13,300",
+ images: [img44, img45, img46, img47,img48], // replace with actual images
+  description:
+    "Dell Latitude E7450 with Intel Core i5 5th Gen, 8GB DDR3 RAM, and 256GB M-SATA SSD. Lightweight, durable, and perfect for everyday tasks.",
+  battery: "2+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 10 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id:30,
+  brand: "DELL",
+  name: "Dell Latitude E7450 (i7 - 5th Gen)",
+  processor: "Intel Core i7 - 5th Gen",
+  ram: "8GB DDR3",
+  storage: "256GB M-SATA SSD",
+  display: '14" HD Anti Glare LED Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹14,800",
+ images: [img44, img45, img46, img47,img48], // replace with actual images
+  description:
+    "Dell Latitude E7450 with powerful Intel Core i7 5th Gen, 8GB RAM, and 256GB M-SATA SSD. Reliable, durable, and ideal for office or student use.",
+  battery: "2+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 10 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+
+ {
+  id:31,
+  brand: "HP",
+  name: "HP EliteBook 840 G7 (i5 - 10th Gen)",
+  processor: "Intel Core i5 - 10th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" Full HD Anti-Glare Display',
+  gpu: "Intel HD Graphics",
+  price: "₹28,300",
+  images: [ img11,img10, img12, img13], // replace with real images
+  description:
+    "HP EliteBook 840 G7 with 10th Gen i5 processor, 16GB RAM, and 512GB NVMe SSD. Slim, lightweight design with backlit keyboard and business-grade performance.",
+  battery: "2 Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id:32,
+  brand: "HP",
+  name: "HP EliteBook 840 G8 (i5 - 11th Gen)",
+  processor: "Intel Core i5 - 11th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" Full HD Anti-Glare Display',
+  gpu: "Intel HD Graphics",
+  price: "₹29,800",
+   images: [ img11,img10, img12, img13], // replace with actual image imports
+  description:
+    "Premium HP EliteBook 840 G8 with 11th Gen i5, 16GB RAM, 512GB NVMe SSD, slim design, backlit keyboard, and business-grade performance.",
+  battery: "2 Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id:33,
+  brand: "HP",
+  name: "HP Laptop – 12th Gen Intel Core i3",
+  processor: "Intel Core i3 - 12th Gen",
+  ram: "8GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '15.6" Anti Glare Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹18,700",
+  images: [img70,img71,img72], // replace with actual image imports
+  description:
+    "Sleek, fast, and reliable HP laptop powered by 12th Gen Intel Core i3, 8GB RAM, and 512GB NVMe SSD for smooth performance.",
+  battery: "3+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 64-bit Edition",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+ {
+  id:34,
+  brand: "HP",
+  name: "HP ProBook 640 G5",
+  processor: "Intel Core i5 - 8th Gen",
+  ram: "8GB DDR4",
+  storage: "256GB NVMe SSD",
+  display: '14.1" Full HD Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹18,700",
+  images: [img1, img2, img3, img4], // replace with actual images
+  description:
+    "HP ProBook 640 G5 with 8th Gen Intel Core i5 processor, 8GB RAM, 256GB NVMe SSD, and a Full HD display for smooth daily performance.",
+  battery: "2+ Hrs Backup", // not mentioned, so added standard
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit Edition", // assumed latest
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag (New), Mouse (New Box Pack)",
+},
+
+{
+  id:35,
+  brand: "LENOVO",
+  name: "Lenovo ThinkPad T480",
+  processor: "Intel Core i7 - 8th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" Full HD Touch LED Screen (1920 x 1080)',
+  gpu: "Intel UHD Graphics",
+  price: "₹22,500",
+  images: [img39, img40, img41, img42,img43],// replace with actual images
+  description:
+    "Lenovo ThinkPad T480 with 8th Gen Intel Core i7 processor, 16GB DDR4 RAM, 512GB NVMe SSD, and a Full HD Touch Display for powerful productivity.",
+  battery: "2+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id:36,
+  brand: "LENOVO",
+  name: "Lenovo ThinkPad T480",
+  processor: "Intel Core i7 - 8th Gen",
+  ram: "8GB DDR4",
+  storage: "256GB NVMe SSD",
+  display: '14" Full HD Touch LED Screen (1920 x 1080)',
+  gpu: "Intel UHD Graphics",
+  price: "₹18,500",
+   images: [img39, img40, img41, img42,img43], // replace with actual images
+  description:
+    "Lenovo ThinkPad T480 powered by Intel Core i7-8th Gen, featuring 8GB RAM, 256GB NVMe SSD, and a Full HD Touch Display for smooth productivity.",
+  battery: "2+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+{
+  id:37,
+  brand: "LENOVO",
+  name: "Lenovo ThinkPad X1 Carbon 7th Gen",
+  processor: "Intel Core i7 - 8th Gen",
+  ram: "16GB DDR4",
+  storage: "512GB NVMe SSD",
+  display: '14" 2K Screen',
+  gpu: "Intel UHD Graphics",
+  price: "₹29,800",
+  images: [img59, img60, img61], // replace with real images
+  description:
+    "Premium Lenovo ThinkPad X1 Carbon 7th Gen with i7-8th Gen processor, 16GB RAM, 512GB NVMe SSD and stunning 2K display.",
+  battery: "3+ Hrs Backup",
+  ports: "Wi-Fi / Webcam / Bluetooth",
+  os: "Windows 11 Professional 64-bit",
+  warranty: "3 Months Hardware Warranty",
+  free: "Laptop Bag + USB Mouse Free",
+},
+
+
 
 
 
@@ -416,534 +978,6 @@ RJ45`,
 //         warranty: "3 Months Hardware Warranty"
 //     },
 
-//     {
-//         id: 6,
-//         brand: "HP",
-//         name: "HP EliteBook 840 G7",
-//         processor: "Intel Core i7 10th Gen",
-//         ram: "16GB DDR4",
-//         storage: "512GB NVMe SSD",
-//         display: "14\" Full HD Anti-Glare",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹29,300",
-//         images: [
-//             "https://source.unsplash.com/featured/?hp,elitebook",
-//             "https://source.unsplash.com/featured/?hp,laptop"
-//         ],
-//         description: "Premium business laptop with fingerprint reader, B&O Audio, and sleek build.",
-//         battery: "Long Battery Life",
-//         ports: "USB-C, HDMI, Wi-Fi, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 7,
-//         brand: "Dell",
-//         name: "Dell Latitude 5400",
-//         processor: "Intel Core i7 8th Gen",
-//         ram: "16GB DDR4",
-//         storage: "512GB NVMe SSD",
-//         display: "14\" FHD LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹23,700",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,latitude",
-//             "https://source.unsplash.com/featured/?laptop,dell"
-//         ],
-//         description: "Dell Latitude 5400 with strong performance and business durability.",
-//         battery: "2+ Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 8,
-//         brand: "Dell",
-//         name: "Dell Latitude 5400",
-//         processor: "Intel Core i7 8th Gen",
-//         ram: "8GB DDR4",
-//         storage: "256GB NVMe SSD",
-//         display: "14\" FHD LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹20,300",
-//         images: [dell3,
-//             "https://source.unsplash.com/featured/?dell,5400",
-//             "https://source.unsplash.com/featured/?laptop,office"
-//         ],
-//         description: "Affordable Dell Latitude 5400 for multitasking.",
-//         battery: "3 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 9,
-//         brand: "Dell",
-//         name: "Dell Latitude E7450",
-//         processor: "Intel Core i5 5th Gen",
-//         ram: "8GB DDR3",
-//         storage: "256GB M-SATA SSD",
-//         display: "14\" HD Anti-Glare LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹13,500",
-//         images: [dell3,
-//             "https://source.unsplash.com/featured/?dell,e7450",
-//             "https://source.unsplash.com/featured/?dell,oldlaptop"
-//         ],
-//         description: "Reliable Dell Latitude E7450 with 5th Gen i5 and SSD storage.",
-//         battery: "2+ Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 10 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 10,
-//         brand: "Dell",
-//         name: "Dell Latitude E7450",
-//         processor: "Intel Core i5 5th Gen",
-//         ram: "8GB DDR3",
-//         storage: "512GB M-SATA SSD",
-//         display: "14\" HD Anti-Glare LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹14,800",
-//         images: [dell3,
-//             "https://source.unsplash.com/featured/?dell,512ssd",
-//             "https://source.unsplash.com/featured/?dell,notebook"
-//         ],
-//         description: "Dell Latitude E7450 upgraded with 512GB SSD for more storage.",
-//         battery: "2+ Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 10 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 11,
-//         brand: "Dell",
-//         name: "Dell Latitude 5490",
-//         processor: "Intel Core i5 8th Gen",
-//         ram: "8GB DDR4",
-//         storage: "256GB NVMe SSD",
-//         display: "14\" FHD LED",
-//         gpu: "Intel HD Graphics",
-//         price: "₹17,300",
-//         images: [dell3,
-//             "https://source.unsplash.com/featured/?dell,5490",
-//             "https://source.unsplash.com/featured/?laptop,dell"
-//         ],
-//         description: "Compact and efficient Dell Latitude 5490.",
-//         battery: "2 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 12,
-//         brand: "Dell",
-//         name: "Dell Latitude 7480",
-//         processor: "Intel Core i5 7th Gen",
-//         ram: "8GB DDR4",
-//         storage: "512GB NVMe SSD",
-//         display: "14\" FHD LED",
-//         gpu: "Intel HD Graphics",
-//         price: "₹18,500",
-//         images: [dell3,
-//             "https://source.unsplash.com/featured/?dell,7480",
-//             "https://source.unsplash.com/featured/?laptop,thin"
-//         ],
-//         description: "Dell Latitude 7480 with 7th Gen Intel Core i5 and large SSD.",
-//         battery: "2 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 13,
-//         brand: "Dell",
-//         name: "Dell Latitude 7480",
-//         processor: "Intel Core i5 7th Gen",
-//         ram: "8GB DDR4",
-//         storage: "256GB NVMe SSD",
-//         display: "14\" FHD LED",
-//         gpu: "Intel HD Graphics",
-//         price: "₹16,500",
-//         images: [dell3,
-//             "https://source.unsplash.com/featured/?dell,office",
-//             "https://source.unsplash.com/featured/?dell,lightweight"
-//         ],
-//         description: "Affordable Dell Latitude 7480 for students and office work.",
-//         battery: "2 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty",
-//         discount : 10
-//     },
-//     {
-//         id: 14,
-//         brand: "Dell",
-//         name: "Dell Latitude E5450",
-//         processor: "Intel Core i7 5th Gen",
-//         ram: "8GB DDR3",
-//         storage: "256GB SATA SSD",
-//         display: "14\" HD Anti-Glare LED",
-//         gpu: "Intel HD Graphics",
-//         price: "₹14,500",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,e5450",
-//             "https://source.unsplash.com/featured/?old,dell"
-//         ],
-//         description: "Dell Latitude E5450 with i7 5th Gen processor.",
-//         battery: "2+ Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 10 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty",
-//          discount: 20,
-//     },
-//     {
-//         id: 15,
-//         brand: "Dell",
-//         name: "Dell Latitude E5450",
-//         processor: "Intel Core i5 5th Gen",
-//         ram: "8GB DDR3",
-//         storage: "256GB SATA SSD",
-//         display: "14\" HD Anti-Glare LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹12,900",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,e5450",
-//             "https://source.unsplash.com/featured/?dell,usedlaptop"
-//         ],
-//         description: "Entry-level Dell Latitude with 5th Gen i5 and SSD storage.",
-//         battery: "2+ Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 10 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty",
-//          discount: 15,
-//     },
-
-//     {
-//         id: 16,
-//         brand: "HP",
-//         name: "HP EliteBook 840 G5",
-//         processor: "Intel Core i5 8th Gen",
-//         ram: "8GB DDR4",
-//         storage: "256GB NVMe SSD",
-//         display: "14.1\" FHD",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹20,900",
-//         images: [dell2,
-//             "https://source.unsplash.com/featured/?hp,840g5",
-//             "https://source.unsplash.com/featured/?hp,elitebook"
-//         ],
-//         description: "HP EliteBook 840 G5 with slim design, Windows 11 Pro, and professional performance.",
-//         battery: "2 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty",
-//         discount: 5,
-//     },
-//     {
-//         id: 17,
-//         brand: "Dell",
-//         name: "Dell Latitude 7490",
-//         processor: "Intel Core i7 8th Gen",
-//         ram: "16GB DDR4",
-//         storage: "512GB SSD",
-//         display: "14\" Full HD",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹24,700",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,7490",
-//             "https://source.unsplash.com/featured/?dell,laptop"
-//         ],
-//         description: "Premium Dell Latitude 7490 with i7, 16GB RAM, and backlit keyboard.",
-//         battery: "Excellent Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 18,
-//         brand: "Dell",
-//         name: "Dell Latitude 7490",
-//         processor: "Intel Core i7 8th Gen",
-//         ram: "8GB DDR4",
-//         storage: "256GB SSD",
-//         display: "14\" Full HD",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹21,300",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,7490",
-//             "https://source.unsplash.com/featured/?dell,notebook"
-//         ],
-//         description: "Dell Latitude 7490 i7 with 8GB RAM and slim professional design.",
-//         battery: "Excellent Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 19,
-//         brand: "Dell",
-//         name: "Dell Latitude 7490",
-//         processor: "Intel Core i5 8th Gen",
-//         ram: "16GB DDR4",
-//         storage: "512GB SSD",
-//         display: "14\" Full HD",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹21,900",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,latitude",
-//             "https://source.unsplash.com/featured/?dell,7490"
-//         ],
-//         description: "Dell Latitude 7490 i5 variant with 16GB RAM and 512GB SSD.",
-//         battery: "Excellent Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 20,
-//         brand: "Dell",
-//         name: "Dell Latitude 7490",
-//         processor: "Intel Core i5 8th Gen",
-//         ram: "8GB DDR4",
-//         storage: "256GB SSD",
-//         display: "14\" Full HD",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹18,500",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,office",
-//             "https://source.unsplash.com/featured/?dell,7490"
-//         ],
-//         description: "Affordable Dell Latitude 7490 with 8GB RAM, Windows 10 Pro.",
-//         battery: "Good Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
-//         os: "Windows 10 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 21,
-//         brand: "Dell",
-//         name: "Dell Latitude 5470",
-//         processor: "Intel Core i5 6th Gen",
-//         ram: "8GB DDR4",
-//         storage: "512GB NVMe SSD",
-//         display: "14\" FHD LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹16,700",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,5470",
-//             "https://source.unsplash.com/featured/?dell,laptop"
-//         ],
-//         description: "Dell Latitude 5470 upgraded with 512GB NVMe SSD.",
-//         battery: "2 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 22,
-//         brand: "Dell",
-//         name: "Dell Latitude 5470",
-//         processor: "Intel Core i5 6th Gen",
-//         ram: "8GB DDR4",
-//         storage: "256GB NVMe SSD",
-//         display: "14\" FHD LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹14,300",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,5470",
-//             "https://source.unsplash.com/featured/?dell,usedlaptop"
-//         ],
-//         description: "Dell Latitude 5470 with i5, 8GB RAM, and reliable build.",
-//         battery: "2 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 23,
-//         brand: "Lenovo",
-//         name: "Lenovo ThinkPad T480",
-//         processor: "Intel Core i7 8th Gen",
-//         ram: "8GB DDR4 (Up to 32GB)",
-//         storage: "256GB NVMe SSD",
-//         display: "14\" FHD Touch LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹18,500",
-//         images: [
-//             lenovo1,lenovo4,lenovo5,lenovo6,lenovo7,lenovo8,lenovo9,lenovo10,lenovo11
-//         ],
-//         description: "Durable Lenovo ThinkPad T480 with 8th Gen i7 and touch screen.",
-//         battery: "2+ Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 24,
-//         brand: "Lenovo",
-//         name: "Lenovo ThinkPad T14 Gen 2",
-//         processor: "Intel Core i5 11th Gen",
-//         ram: "16GB DDR4",
-//         storage: "512GB NVMe SSD",
-//         display: "14\" FHD IPS Anti-Glare",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹25,900",
-//         images: [
-//             "https://source.unsplash.com/featured/?lenovo,t14",
-//             "https://source.unsplash.com/featured/?thinkpad,laptop"
-//         ],
-//         description: "ThinkPad T14 Gen 2 with advanced connectivity, FIDO, TPM 2.0, and Thunderbolt support.",
-//         battery: "3+ Hrs Backup",
-//         ports: "USB-C, Thunderbolt 3, HDMI, RJ45, MicroSD, USB 3.2",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 25,
-//         brand: "Lenovo",
-//         name: "Lenovo ThinkPad P51",
-//         processor: "Intel Core i7 7th Gen 7820HQ (4C/8T)",
-//         ram: "32GB DDR4 (128GB Supported)",
-//         storage: "512GB NVMe SSD",
-//         display: "15.6\" FHD",
-//         gpu: "NVIDIA Quadro M1200 4GB",
-//         price: "₹26,500",
-//         images: [
-//             "https://source.unsplash.com/featured/?lenovo,p51",
-//             "https://source.unsplash.com/featured/?thinkpad,workstation"
-//         ],
-//         description: "Workstation-grade ThinkPad P51 with Quadro graphics and massive RAM support.",
-//         battery: "2 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth, HDMI, USB",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-//     {
-//         id: 26,
-//         brand: "Lenovo",
-//         name: "Lenovo ThinkPad E14 Gen 2",
-//         processor: "Intel Core i5 11th Gen 1135G7",
-//         ram: "16GB DDR4",
-//         storage: "512GB NVMe SSD",
-//         display: "14\" LED",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹24,300",
-//         images: [
-//             "https://source.unsplash.com/featured/?lenovo,e14",
-//             "https://source.unsplash.com/featured/?lenovo,thinkpad"
-//         ],
-//         description: "ThinkPad E14 Gen 2 with Wi-Fi 6, dTPM 2.0 security, and slim design.",
-//         battery: "3+ Hrs Backup",
-//         ports: "USB-C, Thunderbolt 3, HDMI, RJ45, MicroSD, USB 3.2",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty",
-//          ramOptions: [
-//       { label: "8GB", value: 0 },
-//       { label: "16GB", value: 3500 },
-//       { label: "32GB", value: 9500 },
-//     ],
-//     storageOptions: [
-//       { label: "512GB SSD", value: 0 },
-//       { label: "1TB SSD", value: 5000 },
-//     ],
-//     },
-//     {
-//         id: 27,
-//         brand: "Dell",
-//         name: "Dell Latitude 5400",
-//         processor: "Intel Core i5 8th Gen",
-//         ram: "16GB DDR4",
-//         storage: "512GB NVMe SSD",
-//         display: "14\" FHD LED Touch",
-//         gpu: "Intel UHD Graphics",
-//         price: "₹20,800",
-//         images: [
-//             "https://source.unsplash.com/featured/?dell,5400",
-//             "https://source.unsplash.com/featured/?dell,touch"
-//         ],
-//         description: "Dell Latitude 5400 with touch display and 16GB RAM.",
-//         battery: "3 Hrs Backup",
-//         ports: "Wi-Fi, WebCam, Bluetooth",
-//         os: "Windows 11 Professional 64-bit",
-//         warranty: "3 Months Hardware Warranty"
-//     },
-
-
-
-
-
-
-
-//   {
-//     id: 28,
-//     name: "Dell Inspiron 15",
-//     image: "/images/dell-inspiron.jpg",
-//     basePrice: 50000,
-//     description: "Powerful everyday laptop with a sleek design.",
-//     specifications: {
-//       processor: "Intel Core i5 11th Gen",
-//       display: "15.6-inch Full HD",
-//       os: "Windows 11",
-//       graphics: "Intel Iris Xe",
-//     },
-//     ramOptions: [
-//       { label: "8GB", value: 0 },
-//       { label: "16GB", value: 3000 },
-//       { label: "32GB", value: 7000 },
-//     ],
-//     storageOptions: [
-//       { label: "256GB SSD", value: 0 },
-//       { label: "512GB SSD", value: 4000 },
-//       { label: "1TB SSD", value: 8000 },
-//     ],
-//   },
-//   {
-//     id: 29,
-//     name: "HP Pavilion X360",
-//     image: "/images/hp-pavilion.jpg",
-//     basePrice: 60000,
-//     description: "Touchscreen convertible laptop perfect for students.",
-//     specifications: {
-//       processor: "Intel Core i7 12th Gen",
-//       display: "14-inch Full HD Touch",
-//       os: "Windows 11",
-//       graphics: "Intel Iris Xe",
-//     },
-//     ramOptions: [
-//       { label: "8GB", value: 0 },
-//       { label: "16GB", value: 4000 },
-//       { label: "32GB", value: 8000 },
-//     ],
-//     storageOptions: [
-//       { label: "512GB SSD", value: 0 },
-//       { label: "1TB SSD", value: 6000 },
-//     ],
-//   },
-//   {
-//     id: 30,
-//     name: "Lenovo ThinkPad E14",
-//     image: "/images/lenovo-thinkpad.jpg",
-//     basePrice: 55000,
-//     description: "Business-class durability with professional performance.",
-//     specifications: {
-//       processor: "AMD Ryzen 5 5500U",
-//       display: "14-inch Full HD Anti-glare",
-//       os: "Windows 11 Pro",
-//       graphics: "AMD Radeon Graphics",
-//     },
-//     ramOptions: [
-//       { label: "8GB", value: 0 },
-//       { label: "16GB", value: 3500 },
-//       { label: "32GB", value: 7500 },
-//     ],
-//     storageOptions: [
-//       { label: "512GB SSD", value: 0 },
-//       { label: "1TB SSD", value: 5000 },
-//     ],
-
-//   }
 
 
 ];
@@ -956,84 +990,6 @@ export default laptops;
 
 
 
-
-
-
-// // export const accessories = [
-// //   {
-// //     id: 1,
-// //     name: "Gaming Mouse",
-// //     price: 1499,
-// //     image: "/images/accessories/gaming-mouse.jpg",
-// //     specs: {
-// //       "DPI": "16000",
-// //       "RGB Lighting": "Yes",
-// //       "Connection": "Wired",
-// //     },
-// //   },
-// //   {
-// //     id: 2,
-// //     name: "Mechanical Keyboard",
-// //     price: 2999,
-// //     image: "/images/accessories/mechanical-keyboard.jpg",
-// //     specs: {
-// //       "Switch Type": "Blue",
-// //       "RGB": "Customizable",
-// //       "Connection": "USB",
-// //     },
-// //   },
-// // ];
-
-
-
-// // // ✅ Add a new accessories section
-// // export const accessories = [
-// //   {
-// //     id: 101,
-// //     name: "Gaming Mouse",
-// //     category: "Gaming Accessories",
-// //     price: 1499,
-// //     img: "https://cdn.pixabay.com/photo/2016/11/29/09/32/mouse-1867774_1280.jpg",
-// //     desc: "High-precision gaming mouse with customizable RGB lighting.",
-// //     specs: {
-// //       Brand: "Logitech",
-// //       Connectivity: "Wired USB",
-// //       DPI: "16000",
-// //       RGB: "Yes",
-// //       Warranty: "2 Years",
-// //     },
-// //   },
-// //   {
-// //     id: 102,
-// //     name: "Mechanical Keyboard",
-// //     category: "Gaming Accessories",
-// //     price: 2999,
-// //     img: "https://cdn.pixabay.com/photo/2020/03/23/13/55/keyboard-4969693_1280.jpg",
-// //     desc: "Durable mechanical keyboard with RGB lighting and blue switches.",
-// //     specs: {
-// //       Brand: "Redragon",
-// //       SwitchType: "Blue Switches",
-// //       Connectivity: "USB Wired",
-// //       Backlight: "RGB",
-// //       Warranty: "1 Year",
-// //     },
-// //   },
-// //   {
-// //     id: 103,
-// //     name: "Webcam",
-// //     category: "Computer Accessories",
-// //     price: 1999,
-// //     img: "https://cdn.pixabay.com/photo/2018/05/09/10/48/webcam-3385962_1280.jpg",
-// //     desc: "Full HD webcam ideal for video conferencing and streaming.",
-// //     specs: {
-// //       Brand: "Logitech",
-// //       Resolution: "1080p Full HD",
-// //       Mic: "Built-in",
-// //       Focus: "Auto Focus",
-// //       Warranty: "1 Year",
-// //     },
-// //   },
-// // ];
 
 import acc from "../assets/acc.jpg";
 import acc2 from "../assets/acc2.jpg";

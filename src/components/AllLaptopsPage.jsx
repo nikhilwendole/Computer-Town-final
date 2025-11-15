@@ -89,6 +89,11 @@ export default function AllLaptopsPage() {
             <option value="DELL">Dell</option>
             <option value="HP">HP</option>
             <option value="LENOVO">Lenovo</option>
+            <option value="Acer">Acer</option>
+            <option value="Apple">Apple</option>
+            
+            
+
           </select>
 
           <select name="ram" value={filters.ram} onChange={handleFilterChange} className="p-3 rounded-lg border border-gray-300 bg-gray-50 text-gray-700">
